@@ -8,9 +8,10 @@ import {
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SplashScreen from './src/Views/SplashScreen';
 import MainScreen from './src/Views/MainScreen';
+import type { RootStackParamList } from './src/types/navigation';
 
 function App() {
-  const Stack = createNativeStackNavigator();
+  const Stack = createNativeStackNavigator<RootStackParamList>();
   return (
     <SafeAreaView className='flex-1'>
       <StatusBar barStyle='dark-content' />

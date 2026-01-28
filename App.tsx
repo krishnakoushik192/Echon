@@ -1,8 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import './global.css';
-import { StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
 import {
-  SafeAreaProvider,
   SafeAreaView,
 } from 'react-native-safe-area-context';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -24,21 +23,5 @@ function App() {
     </SafeAreaView>
   );
 }
-
-function AppContent() {
-  return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500">
-        Welcome to Nativewind!
-      </Text>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;

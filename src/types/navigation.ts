@@ -1,4 +1,8 @@
 export type RootStackParamList = {
   SplashScreen: {};
-  MainScreen: {};
+  Chats: {};
+  'My Account': {};
+  DrawerLayout: {};
+  Search: {};
+  Conversation: {};
 };
